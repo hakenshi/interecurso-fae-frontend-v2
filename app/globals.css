@@ -2,8 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+.layout {
   font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-rows: 72px 1fr;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas: 
+    'header header'
+    'aside main';
+    min-block-size: 100vh;
+}
+
+header{
+  grid-area: header;
+}
+
+aside{
+  grid-area: aside;
+}
+main{
+  grid-area: main;
+  place-items: center;
 }
 
 @layer base {

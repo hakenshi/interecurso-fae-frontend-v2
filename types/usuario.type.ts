@@ -1,9 +1,9 @@
 import { Cursos } from "./curso.type"
 
-enum TipoUsuario {
-    ADMIN = 1,
-    RESPONSAVEL = 2,
-    USUARIO = 3
+export enum TipoUsuario {
+    ADMIN = '1',
+    RESPONSAVEL = '2',
+    USUARIO = '3'
 }
 
 export type Usuario = {
